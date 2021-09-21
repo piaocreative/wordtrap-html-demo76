@@ -1,0 +1,102 @@
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+
+.shipping-banner {
+	position: absolute;
+	left: 4.375rem;
+	top: 5.625rem;	
+}
+
+.carousel-indicator {
+	width: 7.5rem;
+    display: flex;
+    justify-content: space-between;
+
+	a {
+		font-size: 1.5rem;
+		color: $theme-color;
+		z-index: 2;
+
+		&.active {
+			color: $white;
+		}
+	}
+}
+
+.about-title {
+	&:after {
+		position: relative;
+		display: inline-block;
+		content: "";
+		width: 40%;
+		height: 3px;
+		background-color: #073070;
+	}
+
+	&.primary {
+		&:after {
+			background-color: $theme-color;
+		}
+	}
+}
+
+
+.about-us-link {
+	display: inline-block;
+	background-color: $theme-color;
+	font-family: $body-font;
+	font-weight: 500;
+	font-size: .875rem;
+	color: $white;
+	padding: 0.75rem 3rem;
+	text-decoration: none;
+}
+
+#subscribe {
+	p {
+		font-size: 1.25rem;
+		color: #909090;
+	}
+
+	a {
+		color: #e3252e;
+		text-decoration: none;
+		font-weight: 500;
+	}
+}
+
+.new-arrival {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	@include media-breakpoint-down(lg) {
+		position: relative;
+	}
+}
+
+.see-all-link {
+	letter-spacing: 0.05rem;
+}
+
+.histories {
+	.slick-dots {
+		display: flex;
+		left: 1rem;
+		bottom: -3.35rem;
+
+		li {
+			button {
+				&:before {
+					color: $theme-color;
+				}
+			}
+		}
+
+		@include media-breakpoint-down(lg) {
+			left: 0.5rem;
+    		bottom: -3.75rem;
+		}
+	}
+}

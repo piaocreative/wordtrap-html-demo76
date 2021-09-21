@@ -1,0 +1,352 @@
+
+/* ----------------------------------------------------------------
+
+	header.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Header
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for header. Thanks!
+-----------------------------------------------------------------*/
+
+
+#header {
+	position: relative;	
+
+	// Transparent header
+	&.transparent-header {
+		background: transparent;
+		z-index: 199;
+
+		& + #banner {
+			top: -$header-height;
+			margin-bottom: -$header-height;
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Sticky Header
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Logo
+-----------------------------------------------------------------*/
+.navbar {
+	padding: 0;
+
+	@include media-breakpoint-down(lg) {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+}
+
+.navbar-brand {
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Primary Menu
+-----------------------------------------------------------------*/
+
+#primary-menu {
+	width: 75%;
+	position: relative;
+	z-index: 0;
+
+	.nav-item {
+		margin-right: 4rem;
+	}
+
+	.nav-link {
+		color: $primary-menu-font-color;
+		font-family: $heading-font;
+		font-size: $primary-menu-font-size;
+		font-weight: $primary-menu-font-weight;		
+		letter-spacing: $primary-menu-font-spacing;
+		text-transform: $primary-menu-font-tt;
+		text-align: center;
+		padding: 1.3rem;
+
+		&:hover {
+			color: $theme-color;
+		}
+	}
+	
+	&:before {
+		height: 100%;
+		width: 100%;
+		content: '';
+		position: absolute;
+		border-right: 0px;
+		border-top: 0px;
+		transform: skew(22deg);
+		background: #2a2a2a;
+		left: -9px;
+		top:0px;
+		z-index: -1;
+	}
+
+	@include media-breakpoint-down(lg) {
+		.nav-item {
+			margin: 0;
+		}
+
+		ul {
+			flex-direction: column;
+		}
+
+		&:before {
+			display: none;
+		}
+	}
+}
+
+#page-menu {
+	background-color: $theme-color;
+	padding: 0 2.5rem;
+
+	a {
+		font-family: $body-font;
+		font-weight: 700;
+		color: $white;
+		text-decoration: none;
+	}
+
+	@include media-breakpoint-down(lg) {
+		padding: 2rem 0;
+		flex-direction: column;
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Mega Menu
+-----------------------------------------------------------------*/
+
+// Please ignore mega menu now 
+
+
+/* ----------------------------------------------------------------
+	Top Buttons
+-----------------------------------------------------------------*/
+
+
+#top-btns {
+	ul {
+		height: 4rem;
+	}
+
+	.nav-link {
+		font-family: $body-font;
+		font-size: 0.875rem;
+		font-weight: 400;
+		color: $black;		
+		line-height: 1;
+		padding: 0.75rem 1rem;
+
+		&:hover {
+			color: $primary;
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Top Links
+-----------------------------------------------------------------*/
+
+#top-links {
+	.nav-item {			
+		@include media-breakpoint-up(lg) {
+			padding: 1.875rem;
+		}
+	}
+
+	a.nav-link {
+		color: $topbar-color;
+		display: block;
+		font-size: 0.875rem;	
+
+		@include media-breakpoint-up(lg) {
+			padding: 0;	
+		}
+		
+		&:hover {
+			color: $topbar-hover-color;
+		}
+	}
+
+	.dropdown-toggle {
+		&::after {
+			margin-left: .75em;
+		}
+	}
+
+	.dropdown-menu {
+		background: $white;
+		border: 0;
+		top: $topbar-line-height;
+		left: 0;
+		width: 100%;		
+		margin: 0;
+		border-top: 3px solid $theme-color;
+
+		@include border-radius(0);
+
+		@include box-shadow(0 0 5px -1px rgba($black, 0.2));
+		
+		@include media-breakpoint-up(lg) {
+			width: 8.75rem;
+		}
+
+		a.dropdown-item {
+			color: $heading-color;
+			height: 2.25rem;
+			line-height: 2.25rem;
+			font-size: 0.75rem;				
+			padding: 0 0.75rem;
+
+			&:hover {
+				color: $theme-color;
+			}
+		}
+
+		img {
+			display: inline-block;
+			position: relative;
+			top: -1px;
+			width: 1rem;
+			height: 1rem;
+			margin-right: 0.25rem;
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Top Infos
+-----------------------------------------------------------------*/
+
+#top-infos {
+	ul {
+		display: flex;
+
+		@include media-breakpoint-down(lg) {
+			display: block;
+			gap: 0;
+			text-align: center;
+		}
+	}
+
+	li {
+		padding-left: 2rem;
+		padding-right: 2rem;
+
+		a {
+			font-family: $heading-font;
+			font-size: 1.25rem;
+			color: $dark;
+			text-decoration: none;
+			line-height: 1;
+			letter-spacing: 0.05rem;
+
+			&:hover {
+				color: $theme-color;
+			}
+		}
+
+		p {
+			font-family: $heading-font;
+			font-size: 0.875rem;
+			color: #a9a9a9;
+			line-height: 1;
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Top Social
+-----------------------------------------------------------------*/
+#top-social,
+#top-social ul { margin: 0; }
+
+#top-social {
+	p {
+		color: #6b6b6b;
+	}
+
+	ul {
+		display: flex;
+		align-items: center;
+	}
+
+	li {
+		padding: 0 0.25rem;
+
+		a {
+			color: $theme-color;
+			display: inline-block;
+			line-height: 1.8125rem;
+			width: 1.8125rem;
+			height: 1.8125rem;		
+			vertical-align: middle;
+			text-align: center;
+
+			&:hover {
+				color: #6b6b6b;
+			}
+
+			i {
+				vertical-align: top;
+				line-height: 1.8125rem;
+			}
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Top Login
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Top Search
+-----------------------------------------------------------------*/
+#top-search {
+	width: 30%;
+	margin-left: 8rem;
+}
+
+
+
+
+/* ----------------------------------------------------------------
+	Top Cart
+-----------------------------------------------------------------*/
+
+
+
+
+/* ----------------------------------------------------------------
+	Top Account
+-----------------------------------------------------------------*/
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+.logos {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	.logo-item {
+		position: relative;
+		max-width: 16.625rem;
+		display: flex;
+		justify-content: center;
+
+		img {
+			width: auto;
+			height: auto;
+		}
+
+		@include media-breakpoint-down(sm) {
+			margin-left: 0.5rem;
+			margin-right: 0.5rem;
+		}
+	}
+} 

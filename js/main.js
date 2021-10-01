@@ -45,11 +45,19 @@ $( document ).ready( function() {
             arrows: false,
             responsive: [
                 {
+                    breakpoint: 1400,
+                    settings: {
+                        infinite: true,
+                        slidesToShow: 5,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
                     breakpoint: 992,
                     settings: {
                         infinite: true,
                         slidesToShow: 4,
-                        slidesToScroll: 4,
+                        slidesToScroll: 1,
                     }
                 },
                 {
@@ -57,7 +65,7 @@ $( document ).ready( function() {
                     settings: {
                         infinite: true,
                         slidesToShow: 2,
-                        slidesToScroll: 2,
+                        slidesToScroll: 1,
                     }
                 },
                 {
@@ -65,7 +73,7 @@ $( document ).ready( function() {
                     settings: {
                         infinite: true,
                         slidesToShow: 2,
-                        slidesToScroll: 2,
+                        slidesToScroll: 1,
                     }
                 }
             ]

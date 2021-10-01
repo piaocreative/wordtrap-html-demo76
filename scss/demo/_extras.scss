@@ -71,8 +71,22 @@
 	left: 0;
 	bottom: 0;
 
+	img {
+		max-width: calc(39vw - 10rem);
+	}
+
+	@include media-breakpoint-down(xl) {
+		img {
+			max-width: calc(37.5vw - 10rem);
+		}
+	}
+
 	@include media-breakpoint-down(lg) {
 		position: relative;
+
+		img {
+			max-width: 100%;
+		}
 	}
 }
 

@@ -29,31 +29,38 @@
 		color: $white;
 	}
 
-	.sub-title {
-		font-weight: 500;
-		font-size: 0.875rem;
-		color: #969696;
-		font-family: $heading-font;
-
-		div {
-			&:nth-child(1) {
-				&:after {
-					content: "";
-					position: relative;
-					display: inline-block;
-					width: 1px;
-					height: 1.5rem;
-					vertical-align: middle;
-					background-color: $theme-color;
-					margin: 0 1rem;
-					transform: rotate(336deg);
-				}
-			}
-		}
-	}
-
 	@include media-breakpoint-down(lg) {
 		padding-left: 1rem;
 		padding-right: 1rem;
+	}
+}
+
+.breadcrumb {
+	li {
+		a {
+			font-weight: 500;
+			font-size: 0.875rem;
+			color: #969696;
+			font-family: $heading-font;
+			text-decoration: none;
+
+			&.active {
+				color: $theme-color;
+			}
+		}
+
+		&:first-child {
+			&:after {
+				content: "";
+				position: relative;
+				display: inline-block;
+				width: 1px;
+				height: 1.5rem;
+				vertical-align: middle;
+				background-color: $theme-color;
+				margin: 0 1rem;
+				transform: rotate(336deg);
+			}
+		}
 	}
 }

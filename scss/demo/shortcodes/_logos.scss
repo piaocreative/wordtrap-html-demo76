@@ -8,15 +8,11 @@
 		max-width: 16.625rem;
 		display: flex;
 		justify-content: center;
+		margin: auto;
 
 		img {
 			width: auto;
 			height: auto;
-		}
-
-		@include media-breakpoint-down(sm) {
-			margin-left: 0.5rem;
-			margin-right: 0.5rem;
 		}
 	}
 } 

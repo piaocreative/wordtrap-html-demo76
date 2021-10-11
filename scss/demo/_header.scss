@@ -118,10 +118,8 @@
 	padding: 0 2.5rem;
 
 	a {
-		font-family: $body-font;
 		font-weight: 700;
 		color: $white;
-		text-decoration: none;
 	}
 
 	@include media-breakpoint-down(lg) {
@@ -151,7 +149,6 @@
 	.nav-link {
 		font-family: $body-font;
 		font-size: 0.875rem;
-		font-weight: 400;
 		color: $black;		
 		line-height: 1;
 		padding: 0.75rem 1rem;

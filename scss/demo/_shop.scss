@@ -34,8 +34,6 @@
 	}
 
 	.category-title {
-		font-family: $heading-font;
-		font-weight: 500;
 		font-size: 2.1875rem;
 	}
 }
@@ -80,17 +78,13 @@
 		}
 
 		p {
-			font-family: $body-font;
-			font-weight: 400;
 			font-size: 0.875rem;
 			color: #9d9d9d;
 		}
 	}
 
 	.product-title {
-		font-family: $heading-font;
 		font-size: 1.5rem;
-		font-weight: 500;
 	}
 
 	.product-btns {
@@ -99,14 +93,12 @@
 
 	.add-to-cart {
 		display: inline-block;
-		font-family: $body-font;
 		font-size: 0.875rem;
 		width: 100%;
 		font-weight: 600;
 		color: $white;
 		padding: 0.75rem 2.25rem;
 		background-color: $theme-color;
-		text-decoration: none;
 		letter-spacing: 0.1rem;
 	}
 
@@ -221,8 +213,6 @@
 	}
 
 	.testimonial-details {
-		font-family: $body-font;
-		font-size: 1rem;
 		color: $secondary;
 
 	}
@@ -230,10 +220,6 @@
 		font-size: 0.875rem;
 		font-weight: 700;
 		line-height: 1;
-	}
-
-	.testimonial-age {
-		font-weight: 400;
 	}
 
 	.testimonial-rating {

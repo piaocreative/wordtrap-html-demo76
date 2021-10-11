@@ -153,20 +153,22 @@
 
             <div class="content-wrap">
 
-                <div class="section pt-3">
+                <div id="page-top" class="pt-3">
+                    <div class="container">
+                        <div class="breadcrumb mb-4 ">
+                            <ul class="d-flex align-items-center gap-2">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#" class="active">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section pt-0">
 
                     <div class="container">
 
-                        <div id="page-title" class="mb-3 px-3 position-relative">
-    
-                            <div class="sub-title d-flex align-items-center gap-2">
-                                <div class="m-0">Home</div>
-                                <div class="text-primary fw-semi-bold">Contact Us</div>
-                            </div>
-        
-                        </div>
-
-                        <div class="heading-block px-2">
+                        <div class="heading-block">
                             <h2 class="title">Contact Us</h2>
                         </div>
 
@@ -174,7 +176,7 @@
 
                             <div class="col-lg-6 pe-lg-5">
 
-                                <p class="body-font lh-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                <p class="lh-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
 
                                 <!-- Contact Sidebar
                                 ============================================= -->
@@ -183,17 +185,17 @@
                                     <form class="contact-form" method="POST" novalidate="novalidate">
         
                                         <div class="mb-3">
-                                            <input type="text" value="" class="form-control" name="name" id="contactFormEmail" placeholder="Enter Email" required>                           
+                                            <input type="text" value="" class="form-control border" name="name" id="contactFormEmail" placeholder="Enter Email" required>                           
                                         </div>									
                                         <div class="mb-3">
-                                            <input type="email" value="" class="form-control" name="name" id="contactFormName" placeholder="Enter Name" required>                                    
+                                            <input type="email" value="" class="form-control border" name="name" id="contactFormName" placeholder="Enter Name" required>                                    
                                         </div>
                                         <div class="mb-3">
-                                            <textarea maxlength="5000" rows="8" class="form-control" name="message" id="contactFormMsg" placeholder="Write your message ..."></textarea>                                  
+                                            <textarea maxlength="5000" rows="8" class="form-control border" name="message" id="contactFormMsg" placeholder="Write your message ..."></textarea>                                  
                                         </div>
-                                        <div class="d-md-flex mb-3 gap-3">
-                                            <button value="Send" class="btn btn-primary fs-6 fw-semi-bold text-white text-uppercase" data-loading-text="Loading...">Send Message</button>
-                                            <p class="body-font mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <a href="#">labore et dolore magna aliqua</a></p>
+                                        <div class="d-md-flex mb-3 gap-3 align-items-center">
+                                            <button value="Send" class="btn btn-primary fs-6 fw-semi-bold text-white text-uppercase" style="white-space: nowrap;" data-loading-text="Loading...">Send Message</button>
+                                            <p class="mb-0 lh-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <a href="#">labore et dolore magna aliqua</a></p>
                                         </div>
                                     </form>
         
@@ -203,31 +205,38 @@
                             
                             <div class="col-lg-6">
 
-                                <img src="./images/contact/map.png" class="img-fluid w-100">
+                                <div id="map">
+                                    <img src="./images/contact/map.png" class="img-fluid w-100">
+                                </div>
 
                                 <div class="row mt-3">
 
                                     <div class="col-lg-5">
 
-                                        <div class="widget widget-custom-html text-center text-lg-start">
-                                            <div class="widget-content">
-                                                <p class="mb-0">Our Phone Number</p>
-                                                <a href="#" class="text-dark">+ 1 233 456 789</a>
-                                                <p class="mb-0">Our Email</p>
-                                                <a href="#" class="text-dark">info@saler.com </a>
-                                            </div>                            
-                                        </div>
+                                        <a href="#" class="icon-box">
+                                            <div class="icon-header">
+                                                <span class="mb-0">Our Phone Number</span>
+                                                <h4 class="text-dark">+ 1 233 456 789</h4>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="icon-box">
+                                            <div class="icon-header">
+                                                <span class="mb-0">Our Email</span>
+                                                <h4 class="text-dark">info@saler.com</h4>
+                                            </div>
+                                        </a>
     
                                     </div>
     
                                     <div class="col-lg-7">
-    
-                                        <div class="widget widget-custom-html text-center text-lg-start">
-                                            <div class="widget-content">
-                                                <p class="mb-0">Our Location</p>
-                                                <a href="#" class="text-dark">11302 West Olympic Boulevard Art. 201 Brooklyn, CA 80967 USA</a>
-                                            </div>                            
-                                        </div>
+
+                                        <a href="#" class="icon-box">
+                                            <div class="icon-header">
+                                                <span class="mb-0">Our Location</span>
+                                                <h4 class="text-dark">11302 West Olympic Boulevard Art. 201 Brooklyn, CA 80967 USA</h4>
+                                            </div>
+                                        </a>
     
                                     </div>
 
@@ -250,8 +259,8 @@
                         <div class="row align-items-center justify-content-between">
 
                             <div class="col-lg-5">
-                                <h3 class="heading-font text-uppercase mb-2" style="font-size: 2.8125rem;">Subscribe to our news</h3>
-                                <p class="body-font lh-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices </p>
+                                <h3 class="text-uppercase mb-2" style="font-size: 2.8125rem;">Subscribe to our news</h3>
+                                <p class="lh-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices </p>
                             </div>
     
                             <div class="col-lg-5">
@@ -300,7 +309,7 @@
                                 <img src="images/footer-logo.png" alt="Saler Logo">
                             </a>
 
-                            <p class="body-font lh-base text-white-50 mt-3 pe-lg-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra </p>
+                            <p class="lh-base text-white-50 mt-3 pe-lg-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra </p>
                         </div>
 
                         <div class="col-md-6 col-lg-3">

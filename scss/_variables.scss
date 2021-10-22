@@ -16,166 +16,160 @@ $theme-color:                   #36ad42;
 $body-color:                    #000000;
 $heading-color:                 #302f2d;
 $third-color:                   #2e2e2e;
-// $body-bg:                       #f9f9f9;
 
 //-------------------- Redefine Bootstrap Variables ------------//
 
 // Theme Colors
-$primary:                       $theme-color;
-$secondary:                   #363636;
-$success:                     #f3f6ff;
-$dark:                        black;
-$light:                       #f7f7f7;
+$primary:                         $theme-color;
+$secondary:                   	#363636;
+$success:                     	#f3f6ff;
+$dark:                        	black;
+$light:                       	#f7f7f7;
+$danger:                       	#e3252e;
 
 //-------------------- Font Families --------------------//
 
-$body-font:                     'Roboto', sans-serif;
+$body-font:                       'Roboto', sans-serif;
 
-$heading-font:                  'Inter', sans-serif;
+$heading-font:                    'Inter', sans-serif;
 
 // Font sizes
-$h1-font-size:                	5.625rem;
-$h2-font-size:                	3.75rem;
-$h3-font-size:                	2.8125rem;
-$h4-font-size:                	1.5rem;
-$h5-font-size:                	1.25rem;
-$h6-font-size:               	0.875rem;
+$h1-font-size:                	   5.625rem;
+$h2-font-size:                	   3.75rem;
+$h3-font-size:                	   2.8125rem;
+$h4-font-size:                	   1.5rem;
+$h5-font-size:                	   1.25rem;
+$h6-font-size:               	   0.875rem;
 
 
 // border//
-$border-radius:               	1rem;
-$border-radius-sm:            	2rem;
-$border-radius-lg:            	3rem;
-$border-radius-pill:          	50rem;
+$border-radius:               	   1rem;
+$border-radius-sm:            	   2rem;
+$border-radius-lg:            	   3rem;
+$border-radius-pill:          	   50rem;
 
 
 //-------------------- Top Bar --------------------//
 
-$topbar-color:                  #ddcef5;
-$topbar-hover-color:            #ddcef5;
+$topbar-color:                   #ddcef5;
+$topbar-hover-color:             #ddcef5;
 
 
 //-------------------- Top Bar --------------------//
 
-$topbar-height:                 2.8125rem;
-$topbar-line-height:            2.75rem;
-$topbar-color:                  #adacac;
-$topbar-hover-color:            #7c7b7a;
+$topbar-height:                    2.8125rem;
+$topbar-line-height:               2.75rem;
+$topbar-color:                   #adacac;
+$topbar-hover-color:             #7c7b7a;
 
 //-------------------- Primary Menu --------------------//
 
-$primary-menu-padding:					0.5rem;
-$sticky-menu-padding:					  1.40625rem;
+$primary-menu-padding:			   0.5rem;
+$sticky-menu-padding:			   1.40625rem;
 
-$primary-menu-font:             $body-font;
-$primary-menu-font-weight:      500;
-$primary-menu-font-size:        1rem;
-$primary-menu-font-tt:          initial;
-$primary-menu-font-color:       #fff;
-$primary-menu-font-spacing:     0;
+$primary-menu-font:                $body-font;
+$primary-menu-font-weight:         500;
+$primary-menu-font-size:           1rem;
+$primary-menu-font-tt:             initial;
+$primary-menu-font-color:        #fff;
+$primary-menu-font-spacing:        0;
 
-$header-height:                 6.5rem;
+$header-height:                    6.5rem;
 
 // Sticky Header
-$sticky-header-height:          5.625rem;
+$sticky-header-height:             5.625rem;
 
 
 // top Button
-$top-btn-font-size:        		  1rem;
-$top-btn-font-color:       		#ffffff;
+$top-btn-font-size:        		   1rem;
+$top-btn-font-color:       		 #ffffff;
 
 
 //-------------------- Section --------------------//
 
-$section-spacer:				6rem;
+$section-spacer:				   6rem;
 
 $container-max-widths: (
   xl: 80%
 );
 
-$grid-gutter-width:             2rem;
+$grid-gutter-width:                2rem;
 
 
 // Forms
-$input-color:                   #8f8f8f;
-$input-border-color:            #ebebeb;
-$input-border-width:			      0px;
-$input-btn-focus-color-opacity: 1;
+$input-color:                    #8f8f8f;
+$input-border-color:             #ebebeb;
+$input-border-width:			   0px;
+$input-btn-focus-color-opacity:    1;
 
-$input-btn-padding-y:           1rem;
-$input-btn-padding-x:           2rem;
-$input-btn-font-size:           0.875rem;
+$input-btn-padding-y:              1rem;
+$input-btn-padding-x:              2rem;
+$input-btn-font-size:              0.875rem;
 
-$input-btn-padding-y-sm:        0.67rem;
-$input-btn-padding-x-sm:        1.5rem;
-$input-btn-font-size-sm:        0.75rem;
+$input-btn-padding-y-sm:           0.67rem;
+$input-btn-padding-x-sm:           1.5rem;
+$input-btn-font-size-sm:           0.75rem;
 
-$input-btn-padding-y-lg:        1.33rem;
-$input-btn-padding-x-lg:        1.67rem;
-$input-btn-font-size-lg:        1.17rem;
+$input-btn-padding-y-lg:           1.33rem;
+$input-btn-padding-x-lg:           1.67rem;
+$input-btn-font-size-lg:           1.17rem;
 
-$input-btn-line-height:         1;
+$input-btn-line-height:            1;
+  
+$input-btn-focus-width:            1px;
+$input-focus-border-color:         $theme-color;
 
-$input-btn-focus-width:         1px;
-$input-focus-border-color:      $theme-color;
+$input-border-radius:              0rem;
+$input-border-radius-sm:           1rem;
+$input-border-radius-lg:           1.83rem;
 
-$input-border-radius:           0rem;
-$input-border-radius-sm:        1rem !important;
-$input-border-radius-lg:        1.83rem;
+$input-font-weight:				   300;
+$input-focus-box-shadow:		   0 0 0 1px #e5e8e8;
+$input-placeholder-color:        #a3a3a3;
 
-$input-font-weight:				      300;
-$input-focus-box-shadow:		    0 0 0 1px #e5e8e8;
-$input-placeholder-color:       #a3a3a3;
-
-$form-check-input-width:                  1.2em;
-$form-check-min-height:                   2rem;
-$form-check-padding-start:                $form-check-input-width + .5em;
-$form-check-input-checked-color:          black;
-$form-check-input-checked-bg-color:       #ffffff;
-
-$form-check-input-bg:                     $theme-color;
-$form-check-input-border:                 1px solid rgba($theme-color, .25);
-$form-check-input-border-radius:          .25em;
-$form-check-radio-border-radius:          50%;
+$form-check-input-bg:              $theme-color;
+$form-check-input-border:          1px solid rgba($theme-color, .25);
+$form-check-input-border-radius:   0.25em;
+$form-check-radio-border-radius:   50%;
 
 //Selects
-$form-select-padding-y:          $input-btn-padding-y;
-$form-select-padding-x:          0;
-$form-select-border-radius:      0;
-$form-select-font-family:        $body-font;
-$form-select-font-size:          0.8rem;
-$form-select-color:            #ffffff;
-$form-select-indicator-color:   #ffffff;
+$form-select-padding-y:            $input-btn-padding-y;
+$form-select-padding-x:            0;
+$form-select-border-radius:        0;
+$form-select-font-family:          $body-font;
+$form-select-font-size:            0.8rem;
+$form-select-color:              #ffffff;
+$form-select-indicator-color:    #ffffff;
 
 
 // Buttons
-$btn-font-family:               $body-font;
+$btn-font-family:                  $heading-font;
 
-$btn-padding-y:                 1.2rem;
-$btn-padding-x:                 3rem;
-$btn-font-size:                 1rem;
+$btn-padding-y:                    1.2rem;
+$btn-padding-x:                    3rem;
+$btn-font-size:                    0.875rem;
 
-$btn-padding-y-sm:              0.5rem;
-$btn-padding-x-sm:              1.5rem;
-$btn-font-size-sm:              0.583rem;
+$btn-padding-y-sm:                 0.5rem;
+$btn-padding-x-sm:                 1.5rem;
+$btn-font-size-sm:                 0.583rem;
 
-$btn-padding-y-lg:              1.5rem;
-$btn-padding-x-lg:              5.33rem;
-$btn-font-size-lg:              1.17rem;
+$btn-padding-y-lg:                 1.5rem;
+$btn-padding-x-lg:                 5.33rem;
+$btn-font-size-lg:                 1.17rem;
 
-$btn-font-weight:               500;
-$btn-line-height:               1;
+$btn-font-weight:                  600;
+$btn-line-height:                  1;
 
-$btn-border-width:              1px;
+$btn-border-width:                 1px;
 
-$btn-border-radius:             0rem;
-$btn-border-radius-sm:          0.5rem;
-$btn-border-radius-lg:          1.83rem;
+$btn-border-radius:                0rem;
+$btn-border-radius-sm:             0.5rem;
+$btn-border-radius-lg:             1.83rem;
 
 // line height//
-$line-height-base:              1.5;
-$line-height-sm:                1.25;
-$line-height-lg:                1.8;
+$line-height-base:                 1.5;
+$line-height-sm:                   1.25;
+$line-height-lg:                   1.8;
 
 
 
